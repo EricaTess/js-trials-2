@@ -26,5 +26,15 @@ function everyOtherItem(items) {
 
 // 3. smallestNItems
 function smallestNItems(items, n) {
-  // Replace this with your code
+
+  let result = [];
+
+  items = items.sort((a, b) => a - b);
+  console.log(items)
+
+  for (let i = 0; i < n; i++) {
+    result.push(items[i]);
+  }
+
+  console.log(result);
 }
