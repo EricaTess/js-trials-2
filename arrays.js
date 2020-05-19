@@ -30,7 +30,6 @@ function smallestNItems(items, n) {
   let result = [];
 
   items = items.sort((a, b) => a - b);
-  console.log(items)
 
   for (let i = 0; i < n; i++) {
     result.push(items[i]);
